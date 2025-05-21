@@ -131,4 +131,7 @@
   .h2-bold {
     @apply font-bold text-lg lg:text-xl;
   }
+  .item-button {
+    @apply p-3 hover:bg-muted hover:no-underline;
+  }
 }
