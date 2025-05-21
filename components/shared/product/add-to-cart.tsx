@@ -65,6 +65,7 @@ export default function AddToCart({
         onClick={async () => {
           try {
             const itemId = await addItem(item, quantity)
+            toast('Added to Cart')
             router.push(`/cart/${itemId}`)
           } catch (error: any) {
             toast(error?.message)
